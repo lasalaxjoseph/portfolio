@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Lasala | Computer Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
+</head>
+<body>
+    <!-- Easter Egg Notification -->
+    <div id="easter-egg-notification" class="easter-egg-notification">
+        <div class="easter-egg-content">
+            <span class="easter-egg-text">🎮 SECRET UNLOCKED! 🎮</span>
+            <button class="close-easter-egg">X</button>
+        </div>
+    </div>
+
+    <!-- Day/Night Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="pixel-button">
+            <i class="fas fa-moon"></i> NIGHT MODE
+        </button>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <button id="menuToggle" class="pixel-button">
+            <i class="fas fa-bars"></i> MENU
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="pixel-nav" id="mainNav">
+        <ul>
+            <li><a href="#home" class="nav-link" data-section="home">HOME</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">PROJECTS</a></li>
+            <li><a href="#experience" class="nav-link" data-section="experience">EXPERIENCE</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <!-- Logo Image - Centered and maximized -->
+                <img src="image/logo.png" alt="Joseph Lasala Logo" class="main-logo">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="pixel-title">MY PROJECTS</h2>
+                <div class="title-decoration"></div>
+                <p class="section-subtitle">Academic & Technical Works</p>
+            </div>
+            
+            <div class="quests-container">
+                <!-- Project 1 -->
+                <div class="quest-card completed">
+                    <div class="quest-header">
+                        <h3 class="quest-title">GuardianID System</h3>
+                        <div class="quest-status">
+                            <span class="status-indicator completed-indicator"></span>
+                            THESIS PROJECT
+                        </div>
+                    </div>
+                    <p class="quest-description">Facial recognition-based authentication system for secure daycare child pick-up procedures.</p>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="quest-details">
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Data gathering & requirement analysis
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Technical documentation
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> System testing & validation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="quest-card completed">
+                    <div class="quest-header">
+                        <h3 class="quest-title">DeskMate Smart Bin</h3>
+                        <div class="quest-status">
+                            <span class="status-indicator completed-indicator"></span>
+                            ACADEMIC PROJECT
+                        </div>
+                    </div>
+                    <p class="quest-description">Hands-free smart trash bin with IR sensor detection and automatic lid opening.</p>
+                    <div class="quest-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                    <div class="quest-details">
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Requirements gathering
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Prototype testing
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Hardware design
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="quest-card completed">
+                    <div class="quest-header">
+                        <h3 class="quest-title">Maze Bot</h3>
+                        <div class="quest-status">
+                            <span class="status-indicator completed-indicator"></span>
+                            ACADEMIC PROJECT
+                        </div>
+                    </div>
+                    <p class="quest-description">Autonomous robot with IR & ultrasonic sensors for maze navigation.</p>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">IR Sensor</span>
+                        <span class="tech-tag">Robotics</span>
+                    </div>
+                    <div class="quest-details">
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Hardware design & assembly
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Sensor integration
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Prototype testing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="quest-card completed">
+                    <div class="quest-header">
+                        <h3 class="quest-title">24 Second Shot Clock</h3>
+                        <div class="quest-status">
+                            <span class="status-indicator completed-indicator"></span>
+                            ACADEMIC PROJECT
+                        </div>
+                    </div>
+                    <p class="quest-description">Basketball shot clock using logic gates with pause, play, and reset functions.</p>
+                    <div class="quest-tech">
+                        <span class="tech-tag">EagleCAD</span>
+                        <span class="tech-tag">PCB Design</span>
+                        <span class="tech-tag">Logic Gates</span>
+                        <span class="tech-tag">Electronics</span>
+                    </div>
+                    <div class="quest-details">
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> PCB fabrication
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Component soldering
+                        </div>
+                        <div class="quest-contribution">
+                            <i class="fas fa-check-circle"></i> Circuit testing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2 class="pixel-title">EXPERIENCE & CERTIFICATIONS</h2>
+                <div class="title-decoration"></div>
+                <p class="section-subtitle">Professional Journey & Achievements</p>
+            </div>
+            
+            <div class="experience-container">
+                <!-- Experience List -->
+                <div class="experience-list">
+                    <h3 class="experience-category-title">WORK EXPERIENCE</h3>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-name">IT/Admin Support Intern</h4>
+                            <button class="expand-btn pixel-button" data-target="exp1-details">+</button>
+                        </div>
+                        <div class="experience-company">Proterial Philippines, Inc.</div>
+                        <div class="experience-duration">Feb 2025 – Jun 2025</div>
+                        <div class="experience-responsibilities" id="exp1-details" style="display: none;">
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Provided IT support including troubleshooting hardware, software, and network issues
+                            </div>
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Assisted in system documentation, file management, and administrative tasks
+                            </div>
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Supported daily IT operations to ensure smooth business processes
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-name">Team Member</h4>
+                            <button class="expand-btn pixel-button" data-target="exp2-details">+</button>
+                        </div>
+                        <div class="experience-company">Pizza Hut SM Lipa</div>
+                        <div class="experience-duration">Aug 2022 – Jan 2023</div>
+                        <div class="experience-responsibilities" id="exp2-details" style="display: none;">
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Delivered efficient customer service in a fast-paced environment
+                            </div>
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Assisted in order handling, food preparation, and maintaining store cleanliness
+                            </div>
+                            <div class="responsibility">
+                                <i class="fas fa-check-circle"></i> Developed teamwork, adaptability, and communication skills
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certifications -->
+                <div class="certifications-container">
+                    <h3 class="certifications-title">CERTIFICATIONS</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-item">
+                            <div class="cert-header">
+                                <div class="cert-icon">CSE</div>
+                                <div class="cert-details">
+                                    <h4>Civil Service Exam</h4>
+                                    <p>Professional Level Passer (2025)</p>
+                                </div>
+                                <button class="expand-btn pixel-button" data-target="cert1-details">+</button>
+                            </div>
+                            <div class="cert-description" id="cert1-details" style="display: none;">
+                                Successfully passed the Civil Service Professional Level Examination, demonstrating competency in public service knowledge and skills.
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-header">
+                                <div class="cert-icon">BOSH</div>
+                                <div class="cert-details">
+                                    <h4>Basic Occupational Safety</h4>
+                                    <p>Safety Officer 2 Certification</p>
+                                </div>
+                                <button class="expand-btn pixel-button" data-target="cert2-details">+</button>
+                            </div>
+                            <div class="cert-description" id="cert2-details" style="display: none;">
+                                Completed Basic Occupational Safety and Health Training, qualified to implement safety protocols in workplace environments.
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-header">
+                                <div class="cert-icon">CCNA</div>
+                                <div class="cert-details">
+                                    <h4>Cisco Networking Academy</h4>
+                                    <p>CCNA Modules 1, 2 & 3</p>
+                                </div>
+                                <button class="expand-btn pixel-button" data-target="cert3-details">+</button>
+                            </div>
+                            <div class="cert-description" id="cert3-details" style="display: none;">
+                                Completed Cisco Networking Academy modules covering network fundamentals, routing and switching concepts, and network security basics.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="pixel-title">CONTACT</h2>
+                <div class="title-decoration"></div>
+                <p class="section-subtitle">Get in Touch</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <div class="contact-header">
+                        <div class="contact-titles">
+                            <h3 class="contact-name">Joseph Lasala</h3>
+                            <p class="contact-title">Computer Engineering Graduate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div class="detail-content">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">josephlasala1212@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div class="detail-content">
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-value">+63 991-318-2421</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="detail-content">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Batangas, Philippines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Links -->
+                <div class="contact-links">
+                    <h3 class="links-title">CONNECT WITH ME</h3>
+                    
+                    <div class="link-grid">
+                        <a href="mailto:josephlasala1212@gmail.com" class="link-item email-link">
+                            <div class="link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="link-content">
+                                <h4>Email</h4>
+                                <p>Send me a message</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/lasalaxjoseph/" target="_blank" class="link-item linkedin-link">
+                            <div class="link-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="link-content">
+                                <h4>LinkedIn</h4>
+                                <p>View professional profile</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/lasalaxjoseph" target="_blank" class="link-item github-link">
+                            <div class="link-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="link-content">
+                                <h4>GitHub</h4>
+                                <p>Explore my projects</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Background Elements -->
+    <div class="pixel-background">
+        <div class="pixel-cloud cloud1"></div>
+        <div class="pixel-cloud cloud2"></div>
+        <div class="pixel-star star1"></div>
+        <div class="pixel-star star2"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pixel-footer">
+        <div class="footer-content">
+            <div class="footer-text">© 2025 Joseph Lasala | Computer Engineer</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
